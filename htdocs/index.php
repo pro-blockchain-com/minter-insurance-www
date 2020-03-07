@@ -8,8 +8,8 @@
     <meta data-n-head="ssr" data-hid="og-title" name="og:title" content="We Mint Coins">
     <meta data-n-head="ssr" data-hid="og-description" name="og:description" content="Create a cryptocurrency of your own. All information about the Minter network in one place.">
     <meta data-n-head="ssr" data-hid="og-image" name="og:image" content="/social-share.png?v2">
-    <link data-n-head="ssr" rel="icon" href="/favicon.png">
-    <link data-n-head="ssr" rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link data-n-head="ssr" rel="icon" href="img/favicon.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <?php
