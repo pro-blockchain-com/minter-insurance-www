@@ -64,7 +64,7 @@ Coins in start -72 000 000  MINS
 <br>
 36 000 000 - delegated to top-36 validators
 <br>
-OFFICIAL SITE: <a class="minter_color font-weight-bold link--default text-uppercase" href=ins.minter.su>ins.minter.su</a>
+OFFICIAL SITE: <a class="minter_color font-weight-bold link--default text-uppercase" href=https://ins.minter.su>ins.minter.su</a>
 
                             </p>
                         </div>
