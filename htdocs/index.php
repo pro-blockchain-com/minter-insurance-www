@@ -10,6 +10,8 @@
     <meta data-n-head="ssr" data-hid="og-image" name="og:image" content="/social-share.png?v2">
     <link data-n-head="ssr" rel="icon" href="/favicon.png">
     <link data-n-head="ssr" rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <?php
@@ -164,7 +166,37 @@ TEAM CHANGE CONDITIONS
                             </p>
                         </div>
 
+
 <!-- ----------------------------------- -->
+<?php
+$f = "/z01/github/minter-insurance-bin/minter-insurance-reward-calc.php.json";
+$a = file_get_contents($f);
+$a = json_decode($a,1);
+
+$wal = $_GET[address];
+?>
+                    <hr class="hr--divider">
+  <!-- Another variation with a button -->
+
+  <form class="input-group" style="margin:20px 0 0 40px;paddin;0;">
+    <input type="text" name=address style="" class="form-control" placeholder="Enter Mx address" value="<?php print $wal;?>">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+
+    </div>
+  </form>
+<?php
+
+
+if($wal)
+{
+	$b = $a[RewardEvent][addr][$wal];
+	print "<div style=\"margin:20px 0 0 60px;\">Reward on block [$a[blk]]: ".$b." BIP</div>";
+//print "=====================================================\n";
+}
+?>
 
 
 
@@ -183,7 +215,11 @@ TEAM CHANGE CONDITIONS
                     </div>
 -->
                 </div>
+
+
 <?php
+
+
 include "footer.php";
 ?>
             </div>
