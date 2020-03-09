@@ -8,8 +8,8 @@
     <meta data-n-head="ssr" data-hid="og-title" name="og:title" content="We Mint Coins">
     <meta data-n-head="ssr" data-hid="og-description" name="og:description" content="Create a cryptocurrency of your own. All information about the Minter network in one place.">
     <meta data-n-head="ssr" data-hid="og-image" name="og:image" content="/social-share.png?v2">
-    <link data-n-head="ssr" rel="icon" href="img/favicon.png">
-    <link data-n-head="ssr" rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link data-n-head="ssr" rel="icon" href="/favicon.png">
+    <link data-n-head="ssr" rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 <?php
@@ -40,7 +40,9 @@ TIME OF CREATION - <b>03/2020</b>
 START-UP CAPITAL - <b>1% FROM ALL STAKE  APPROX <span class=minter_color>1 300 000 000</span> BIP</b>
 <br>
 <br>
-Сreation TEAM - <a target=p class="team_link link--default" href=https://ex.minter.su>Ex.minter.su</a> and <a target=p class="team_link link--default" href=https://pro-blockchain.com>Pro-Blockchain.com</a>
+Сreation TEAM
+<br>
+<a target=p class="team_link link--default" href=https://ex.minter.su>Ex.minter.su</a> and <a target=p class="team_link link--default" href=https://pro-blockchain.com>Pro-Blockchain.com</a>
 </p>
 <!-- <a href="https://about.minter.network/" class="index-intro__button button button--main">Start Now</a>-->
 
@@ -64,7 +66,7 @@ Coins in start -72 000 000  MINS
 <br>
 36 000 000 - delegated to top-36 validators
 <br>
-OFFICIAL SITE: <a class="minter_color font-weight-bold link--default text-uppercase" href=https://ins.minter.su>ins.minter.su</a>
+OFFICIAL SITE: <a class="minter_color font-weight-bold link--default text-uppercase" href=ins.minter.su>ins.minter.su</a>
 
                             </p>
                         </div>
@@ -181,30 +183,9 @@ TEAM CHANGE CONDITIONS
                     </div>
 -->
                 </div>
-                <footer class="footer">
-                    <div class="footer__container u-container">
-                        <div class="footer__stats-item">
-                            <div class="footer__stats-key">Since</div>
-                            <div class="footer__stats-value">May 15, 2019</div>
-                        </div>
-                        <div class="footer__stats-item">
-                            <div class="footer__stats-key">Coins created</div>
-                            <div class="footer__stats-value">1 180</div>
-                        </div>
-                        <div class="footer__stats-item">
-                            <div class="footer__stats-key">Blocks</div>
-                            <div class="footer__stats-value">4 993 655</div>
-                        </div>
-                        <div class="footer__stats-item">
-                            <div class="footer__stats-key">Transactions</div>
-                            <div class="footer__stats-value">5 397 717</div>
-                        </div>
-                        <div class="footer__stats-item">
-                            <div class="footer__stats-key">BIPs mined</div>
-                            <div class="footer__stats-value">1 803 039 395</div>
-                        </div>
-                    </div>
-                </footer>
+<?php
+include "footer.php";
+?>
             </div>
         </div>
 </body>
