@@ -1,3 +1,6 @@
+![Preview](https://github.com/pro-blockchain-com/minter-insurance-www/raw/master/htdocs/img/minter-insurance-alpha2.png)
+
+
 # minter-insurance-www
 Web for ins.minter.su (Minter INSurance v2.0)
 
@@ -19,13 +22,13 @@ TICKER - MINS
 
 CRR -18%
 
-BIP in IE (initial emission) - 13 000 000
+BIP in IE (initial emission) - 15 230 000
 
-Coins in start -72 000 000  MINS
+Coins in start - 85 000 000  MINS
 
-36 000 000 - return to MINTER DAO
+42 500 000 - return to MINTER DAO
 
-36 000 000 - delegated to top-36 validators
+42 500 000 - delegated to top-36 validators
 
 OFFICIAL SITE: ins.minter.su
 
