@@ -187,7 +187,7 @@ $t3 million - return to MINTER DAO
 <br>
 $t3 millon - delegated to top-30 validators
 <br>
-OFFICIAL SITE: <a class=\"minter_color font-weight-bold link--default text-uppercase\" href=ins.minter.su>ins.minter.su</a>
+OFFICIAL SITE: <a class=\"minter_color font-weight-bold link--default text-uppercase\" href=https;//ins.minter.su>ins.minter.su</a>
 ";
 ?>
 
