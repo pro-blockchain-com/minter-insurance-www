@@ -28,7 +28,7 @@ print "<link rel=\"stylesheet\" href=\"03.css?$a\">";
                 <div class="u-container index-section main-content">
                     <section class="index-intro u-h2">
 		<B>Minter</B>
-			<img src="/img/minter-logo-circle.svg" alt="Minter" width="33" height="33" class="index-intro__logo"> <B class="text-nowrap">INSURANCE&nbsp;v2.0</B> 
+			<img src="/img/minter-logo-circle.svg" alt="Minter" width="33" height="33" class="index-intro__logo"> <B class="text-nowrap">INSURANCE&nbsp;v2.0</B> <span class=minter_color>(alpha)</span>
 		    </section>
 <h1 class="index-intro__title u-h2">
 Service for Delegators
@@ -48,7 +48,102 @@ START-UP CAPITAL - <b>1% FROM ALL STAKE  APPROX <span class=minter_color>1 300 0
 </p>
 <!-- <a href="https://about.minter.network/" class="index-intro__button button button--main">Start Now</a>-->
 
-                    <hr class="hr--divider">
+
+<!-- ----------------------------------- -->
+<?php
+
+$f = "/z01/github/minter-insurance-bin/address_info.json";
+$a = file_get_contents($f);
+$b = json_decode($a,1);
+
+
+$f = "/z01/github/minter-insurance-bin/minter-insurance-reward-calc.php.json";
+$a = file_get_contents($f);
+$a = json_decode($a,1);
+
+$wal = $_GET[address];
+?>
+  <!-- Another variation with a button -->
+
+  <form class="input-group" style="margin:20px 0 20px;">
+    <input type="text" name=address style="" class="form-control" placeholder="Enter Mx address" value="<?php print $wal;?>">
+    <div class="input-group-append">
+      <button class="btn btn-secondary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+
+    </div>
+  </form>
+<?php
+
+
+if($wal)
+{
+	$c[1] = $a[RewardEvent][addr][$wal];
+	$c[2] = $b[address][$wal][all];
+	$c[3] = count($b[address][$wal][validators]);
+	print "<div style=\"margin:20px 0 0 60px;\">";
+	print "<table class=\"table table-borderless\">";
+	print "<tr>";
+		print "<td class=\"text-right\"> BIP - Reward on block [$a[blk]]</td>";
+		print "<td class=minter_color>";
+		$v = $c[1];
+		$v = round($v,2);
+		print "~ $v BIP";
+		print "</td>";
+
+	print "</tr>";
+	print "<tr>";
+		print "<td class=\"text-right\">Total Stake</td>";
+		print "<td class=minter_color>";
+		$v = $c[2];
+		$v = round($v,2);
+		print "~ $v BIP";
+		print "</td>";
+
+	print "</tr>";
+	print "<tr>";
+		print "<td class=\"text-right\">Validators</td>";
+		print "<td class=minter_color>";
+		$v = $c[3];
+		//$v = round($v,2);
+		print "$v";
+		print "</td>";
+
+	print "</tr>";
+
+	print "</tr>";
+	print "<tr>";
+		print "<td class=\"text-right minter_color\">MINS recommended on</td>";
+		print "<td class=minter_color>";
+		$v = $c[2]/100;
+		$v = ceil($v);
+		print "<b>$v</b> BIP";
+		print "</td>";
+
+	print "</tr>";
+
+
+
+//	print "<tr><td class=minter_color>$c[2]</td><td> Total Stake</td></tr>";
+//	print "<tr><td class=minter_color>".$c[3]."</td><td> Validators</td></tr>";
+	print "</table>";
+	print "</div>";
+	
+//print "=====================================================\n";
+        print "<hr class=\"hr--divider\">";
+}
+?>
+
+
+
+
+
+
+
+
+
+
                     <div class="u-grid u-grid--large u-grid--vertical-margin--large">
                         <div class="u-cell u-cell--medium--1-2">
 <!-- <img src="/img/feature-tools.svg" width="48" height="48" alt="" role="presentation" class="index-feature__icon">-->
@@ -166,40 +261,6 @@ TEAM CHANGE CONDITIONS
                             </p>
                         </div>
 
-
-<!-- ----------------------------------- -->
-<?php
-$f = "/z01/github/minter-insurance-bin/minter-insurance-reward-calc.php.json";
-$a = file_get_contents($f);
-$a = json_decode($a,1);
-
-$wal = $_GET[address];
-?>
-                    <hr class="hr--divider">
-  <!-- Another variation with a button -->
-
-  <form class="input-group" style="margin:20px 0 0 40px;paddin;0;">
-    <input type="text" name=address style="" class="form-control" placeholder="Enter Mx address" value="<?php print $wal;?>">
-    <div class="input-group-append">
-      <button class="btn btn-secondary" type="button">
-        <i class="fa fa-search"></i>
-      </button>
-
-    </div>
-  </form>
-<?php
-
-
-if($wal)
-{
-	$b = $a[RewardEvent][addr][$wal];
-	print "<div style=\"margin:20px 0 0 60px;\">Reward on block [$a[blk]]: ".$b." BIP</div>";
-//print "=====================================================\n";
-}
-?>
-
-
-
                     </div>
 <!--
                     <hr class="hr--divider">
@@ -227,3 +288,4 @@ include "footer.php";
 </body>
 
 </html>
+
