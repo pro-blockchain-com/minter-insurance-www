@@ -1,3 +1,9 @@
+<?php
+$f = "/z01/github/minter-insurance-bin/address_info.json";
+$a = file_get_contents($f);
+$set[address_info] = json_decode($a,1);
+
+?>
 <html>
 
 <head>
@@ -39,7 +45,15 @@ MINTER INSURANCE COIN - <b class=minter_color>MINS</b>
 <br>
 TIME OF CREATION - <b>03/2020</b>
 <br>
-START-UP CAPITAL - <b>1% FROM ALL STAKE  APPROX <span class=minter_color>1 300 000 000</span> BIP</b>
+<?php
+$t = $set[address_info][validator][all];
+$t /= 1000000000;
+$t = round($t,3);
+$total_stake = $t;
+
+print "START-UP CAPITAL - <b>1% FROM ALL STAKE  APPROX <span class=minter_color>".$t." Billion</span> BIP</b>";
+?>
+
 <br>
 <br>
 Сreation TEAM
@@ -80,8 +94,8 @@ $wal = $_GET[address];
 if($wal)
 {
 	$c[1] = $a[RewardEvent][addr][$wal];
-	$c[2] = $b[address][$wal][all];
-	$c[3] = count($b[address][$wal][validators]);
+	$c[2] = $set[address_info][address][$wal][all];
+	$c[3] = count($set[address_info][address][$wal][validators]);
 	print "<div style=\"margin:20px 0 0 60px;\">";
 	print "<table class=\"table table-borderless\">";
 	print "<tr>";
@@ -151,19 +165,31 @@ if($wal)
                             <h2 class="index-feature__title u-h3">COIN INFO</h2>
                             <p class="index-feature__description">
 
+<?php
+print "
 TICKER - MINS
 <br>
 CRR -18%
 <br>
-BIP in IE (initial emission) - 13 000 000
+";
+$t = $total_stake*10;
+print "BIP in IE (initial emission) - ".($t)." Million BIP";
+print "
 <br>
-Coins in start -72 000 000  MINS
+";
+$t2 = $t/0.18;
+$t2 = ceil($t2);
+$t3 = $t2/2;
+print "Coins in start $t2 Million  MINS";
+print "
 <br>
-36 000 000 - return to MINTER DAO
+$t3 million - return to MINTER DAO
 <br>
-36 000 000 - delegated to top-36 validators
+$t3 millon - delegated to top-30 validators
 <br>
-OFFICIAL SITE: <a class="minter_color font-weight-bold link--default text-uppercase" href=ins.minter.su>ins.minter.su</a>
+OFFICIAL SITE: <a class=\"minter_color font-weight-bold link--default text-uppercase\" href=ins.minter.su>ins.minter.su</a>
+";
+?>
 
                             </p>
                         </div>
