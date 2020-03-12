@@ -257,7 +257,7 @@ HOW IT WORK
 </h2>
                             <p class="index-feature__description text-justifY">
 
-- for insurance you need to buy mins or poison the equivalent to a dedicated address
+- for insurance you need to buy MINS 
 <BR>
 - at this address you can always see the insured amount on the official website of the project
 <BR>
