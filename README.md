@@ -1,4 +1,4 @@
-![Preview](https://github.com/pro-blockchain-com/minter-insurance-www/raw/master/htdocs/img/minter-insurance-alpha2.png)
+![Preview](https://github.com/pro-blockchain-com/minter-insurance-www/raw/master/htdocs/img/minter-insurance-alpha3.png)
 
 
 # minter-insurance-www
@@ -10,9 +10,11 @@ Set root path for nginx in htdocs on index.php
 
 ## MINTER INSURANCE COIN - MINS
 
+Coin AS Service (CAS)
+
 TIME OF CREATION - 03/2020
 
-START-UP CAPITAL - 1% FROM ALL STAKE  APPROX 1 520 000 000 BIP
+START-UP CAPITAL - 1% FROM ALL STAKE  APPROX 1 523 000 000 BIP
 
 Сreation TEAM - ex.minter.su Pro-Blockchain.com  
 
