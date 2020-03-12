@@ -202,11 +202,16 @@ OFFICIAL SITE: <a class=\"minter_color font-weight-bold link--default text-upper
 <!-- <img src="/img/feature-tools.svg" width="48" height="48" alt="" role="presentation" class="index-feature__icon">-->
 <img src="/img/feature-community.svg" width="48" height="48" alt="" role="presentation" class="index-feature__icon">
                             <h2 class="index-feature__title u-h3">
-INSURANCE FUND
+INSURANCE FUND && GUARANTEES
 </h2>
                             <p class="index-feature__description  text-justifY">
 
-50% of the coin is owned by Minter DAO. The team acts as a guarantor. In the event that we do not fulfill our obligations, the minter team has the opportunity to sell its coins and with the help of the funds received to compensate for the current situation.
+
+Daily, 80% of the rewards will be spent on the purchase of MINS coins
+<br><br>
+Originally 50% of the coin is owned by Minter DAO. The team acts as a guarantor. In the event that we do not fulfill our obligations, the minter team has the opportunity to sell its coins and with the help of the funds received to compensate for the current situation.
+
+
 
                             </p>
                         </div>
