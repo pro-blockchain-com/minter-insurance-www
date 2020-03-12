@@ -202,7 +202,7 @@ OFFICIAL SITE: <a class=\"minter_color font-weight-bold link--default text-upper
 <!-- <img src="/img/feature-tools.svg" width="48" height="48" alt="" role="presentation" class="index-feature__icon">-->
 <img src="/img/feature-community.svg" width="48" height="48" alt="" role="presentation" class="index-feature__icon">
                             <h2 class="index-feature__title u-h3">
-INSURANCE FUND && GUARANTEES
+INSURANCE FUND & GUARANTEES
 </h2>
                             <p class="index-feature__description  text-justifY">
 
