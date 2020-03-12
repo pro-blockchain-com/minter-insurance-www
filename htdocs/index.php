@@ -37,7 +37,7 @@ print "<link rel=\"stylesheet\" href=\"03.css?$a\">";
 			<img src="/img/minter-logo-circle.svg" alt="Minter" width="33" height="33" class="index-intro__logo"> <B class="text-nowrap">INSURANCE&nbsp;v2.0</B> <span class=minter_color>(alpha)</span>
 		    </section>
 <h1 class="index-intro__title u-h2">
-Service for Delegators
+Coin AS Service (CAS)
 </h1>
 <p class="index-feature__description">
 MINTER INSURANCE COIN - <b class=minter_color>MINS</b>
@@ -206,8 +206,7 @@ INSURANCE FUND
 </h2>
                             <p class="index-feature__description  text-justifY">
 
-Accumulation period - up to 1 year. The amount of 1% of the total amount in delegation. 
-After one year - Maintaining 1% of the reserve on the total steak amount is independent of the insurance amount, technical support for validators
+50% of the coin is owned by Minter DAO. The team acts as a guarantor. In the event that we do not fulfill our obligations, the minter team has the opportunity to sell its coins and with the help of the funds received to compensate for the current situation.
 
                             </p>
                         </div>
@@ -257,15 +256,16 @@ HOW IT WORK
 <BR>
 - at this address you can always see the insured amount on the official website of the project
 <BR>
-- also at any time you can request a withdrawal, payment is made within 24 hours, after requesting a withdrawal - the withdrawal amount does not participate in stake insurance
+- also at any time you can sell MINS
 <BR>
-- in case of an insured event - payment shall be made within 24 hours
+- in case of an insured event - you sell your MINS
 <BR>
 - also on the official website you can view the general network steak, the general steak of any delegator in any validator
 <BR>
 - in the telegram channel you can receive daily information about the status of the network
 <BR>
 - in the telegram bot, you can configure notifications by the status of changes of any parameters, and / or daily notifications
+
                             </p>
                         </div>
 
